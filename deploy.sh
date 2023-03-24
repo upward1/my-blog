@@ -8,7 +8,7 @@ yarn build
 
 
 # 进入生成的文件夹
-cd ./public
+cd ./dist
 
 # git初始化，每次初始化不影响推送
 git init
