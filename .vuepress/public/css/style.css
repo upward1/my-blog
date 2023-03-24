@@ -13,6 +13,34 @@
   background-color: transparent !important;
 }
 
+/* 设置首页文字动画 */
+.home-blog .description,.home-blog .hero h1 {
+  opacity: 1 !important;
+  position: relative;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+.home-blog .description {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+}
+
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+  }
+
+  18.1%, 20.1%, 50.1%, 60%, 65.1%, 80%, 90.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
 /* 设置点击下一页的箭头 */
 .anchor-down {
   display: block;
