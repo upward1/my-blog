@@ -3,7 +3,7 @@ const sidebar = require('./config/sidebar/')
 module.exports = {
   title: '知识库',
   description: '路漫漫其修远兮,吾将上下而求索',
-  dest: 'public',
+  dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico', },],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no', },],
@@ -59,13 +59,13 @@ module.exports = {
       {
         title: '图书推荐系统',
         desc: '一个知识积累的地方。',
-        logo: 'http://kaixin1.top:3005/img/admin_logo.39632318.png',
+        logo: 'https://tools.goodluckweb.top/blog/m/wake.jpg',
         link: 'http://kaixin1.top:3005/',
       },
       {
         title: '3D相册',
         desc: '炫酷的相册展示。',
-        logo: 'http://kaixin1.top:3001/img/1.jpg',
+        logo: 'https://tools.goodluckweb.top/blog/m/take-me-hand.jpg',
         link: 'http://kaixin1.top:3001/',
       }
     ],
