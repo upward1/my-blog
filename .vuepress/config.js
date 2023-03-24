@@ -35,8 +35,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
       { text: '笔记', link: '/docs/', icon: 'reco-document' },
-      { text: '时间线', link: '/timeline/', icon: 'reco-date' },
-      { text: 'GitHub', link: 'https://github.com/upward1/upward1.github.io', icon: 'reco-github' }
+      { text: '时间线', link: '/timeline/', icon: 'reco-date' }
     ],
     sidebar,
     type: 'blog',

@@ -159,10 +159,10 @@ module.exports = {
     // 缩小时缩为哪种模式
     shrinkMode: 'float',
     // 指定浮窗模式浮动在哪一侧
-    floatPosition: 'right', //'left'/'right'
+    floatPosition: 'left', //'left'/'right'
     // 悬浮窗样式
     floatStyle: { bottom: '50px', 'z-index': '999999' },
-    position: { right: '10px', bottom: '10px', 'z-index': '999999'}
+    position: { left: '10px', bottom: '10px', 'z-index': '999999'}
   },
   // 看板娘2
   'vuepress-plugin-helper-live2d': {
@@ -174,10 +174,10 @@ module.exports = {
       // 模型名称(default: hibiki)
       model: 'tororo',//koharu,hibiki,z16,miku,tororo
       display: {
-        position: 'right', // 显示位置：left/right(default: 'right')
+        position: 'left', // 显示位置：left/right(default: 'right')
         width: 135, // 模型的长度(default: 135)
         height: 300, // 模型的高度(default: 300)
-        hOffset: 80, //  水平偏移(default: 65)
+        hOffset: 100, //  水平偏移(default: 65)
         vOffset: 30, //  垂直偏移(default: 0)
       },
       mobile: {

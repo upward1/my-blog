@@ -1,6 +1,8 @@
-/* 隐藏回到顶部的按钮 */
-.back-to-ceiling {
-  display: none !important;
+@media screen and (min-width: 720px){
+  /* 隐藏回到顶部的按钮 */
+  .back-to-ceiling {
+    display: none !important;
+  }
 }
 
 /* 设置navbar透明 */

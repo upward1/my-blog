@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: '今天是充满希望的一天~'
+heroText: '时刻充满希望'
 bgImage: 'https://photo.smallsunnyfox.com/images/blog/bg.png'
 bgImageStyle: {
   height: '100vh',
