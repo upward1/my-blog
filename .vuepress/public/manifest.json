@@ -1,0 +1,15 @@
+{
+  "name": "小陈同学的博客",
+  "short_name": "小陈同学",
+  "start_url": "https://upward1.github.io/",
+  "display": "standalone",
+  "background_color": "#fef4eb",
+  "description": "今天是充满希望的一天~",
+  "orientation": "portrait-primary",
+  "theme_color": "#fef4eb",
+  "icons": [{
+      "src": "/logo.png",
+      "sizes": "285x285",
+      "type": "image/png"
+  }]
+}
