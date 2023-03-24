@@ -17,4 +17,4 @@ git commit -m 'deploy'
 git branch -M main
 
 # 如果你想要部署到 https://USERNAME.github.io
-git push -f git@github.com:upward1/upward1.github.io.git main
+git push -f https://github.com/upward1/upward1.github.io.git main
