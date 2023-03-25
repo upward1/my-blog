@@ -31,7 +31,11 @@ export default {
     scrollFn() {
       const el = document.getElementsByClassName('hero')[0]
       const windowH = el.clientHeight || el.offsetHeight || el.scrollHeight
-      document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
+      if ( document.documentElement.scrollTop) {
+        document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
+      } else {
+        document.body.scrollTop = windowH;
+      }
     }
   }
 }
