@@ -31,10 +31,12 @@ export default {
     scrollFn() {
       const el = document.getElementsByClassName('hero')[0]
       const windowH = el.clientHeight || el.offsetHeight || el.scrollHeight
-      if ( document.documentElement.scrollTop) {
-        document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
-      } else {
+      if (navigator.userAgent.match(/('phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone')/i)) {
+        // 移动端
         document.body.scrollTop = windowH;
+      } else {
+        // pc端
+        document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
       }
     }
   }
