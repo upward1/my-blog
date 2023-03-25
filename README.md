@@ -29,7 +29,8 @@ export default {
 
   methods: {
     scrollFn() {
-      const windowH = document.getElementsByClassName('hero')[0].clientHeight; // 获取窗口高度
+      const el = document.getElementsByClassName('hero')[0]
+      const windowH = el.clientHeight || el.offsetHeight || el.scrollHeight
       document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
     }
   }
