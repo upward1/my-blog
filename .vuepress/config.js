@@ -93,10 +93,9 @@ module.exports = {
     valineConfig: {
       appId: 'v2aZJC7xUKZ3zSP8UJWE1MCW-gzGzoHsz',
       appKey: 'G3rqbDY8Q22ZP8CcXTrxPtwX',
-      placeholder: '填写邮箱可以收到回复哦!',
-      notify: true, // 邮件提醒
-      verify: true, // 验证码
-      recordIP: true
+      placeholder: '来都来了，冒个泡再走呗...',
+      recordIP: true, // 是否记录评论者IP
+      avatar: 'wavatar',
     },
   },
   markdown: {
