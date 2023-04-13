@@ -6,8 +6,6 @@ module.exports = {
   'vuepress-plugin-code-copy': {},
   // 页面切换进度条
   '@vuepress/nprogress': {},
-  // 滚动条
-  'vuepress-plugin-smooth-scroll': {},
   // 阅读进度条
   'reading-progress': {},
   // 吊着的小猫

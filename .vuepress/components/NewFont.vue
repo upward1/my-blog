@@ -179,16 +179,16 @@ export default {
   width: fit-content;
 }
 
-.hero .description::after {
+.hero .description span:last-child::after {
   content: "";
   display: inline;
   position: absolute;
   width: 2px;
   height: 2ch;
-  top: 9%;
+  bottom: .8ch;
   background-color: #000;
   border-radius: 2px;
-  right: -0.5ch;
+  animation: .3s cursor steps(2, jump-none) infinite;
 }
 
 .hero .description.ended::after {
@@ -237,4 +237,5 @@ export default {
     opacity: 1;
   }
 }
+
 </style>      
