@@ -2,6 +2,8 @@ const path = require('path')
 module.exports = {
   // 默认随机展示名人名句
   'vuepress-plugin-boxx': {},
+  // 滚动条
+  'vuepress-plugin-smooth-scroll': {},
   //一键复制代码
   'vuepress-plugin-code-copy': {},
   // 页面切换进度条
