@@ -1,7 +1,7 @@
 {
   "name": "小陈同学的博客",
   "short_name": "小陈同学",
-  "start_url": "https://upward1.github.io/",
+  "start_url": "https://upward1.github.io",
   "display": "standalone",
   "background_color": "#fef4eb",
   "description": "今天是充满希望的一天~",
