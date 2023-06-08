@@ -6,13 +6,21 @@
 }
 
 /* 设置navbar透明 */
-.navbar {
-  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 10%) !important;
-  background: rgba(210,249,253,0.3) !important;
+.custom-navbar {
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
-.navbar .links {
+.custom-navbar .site-name {
+  color: #7F7F7F !important;
+}
+
+.custom-navbar .links {
   background-color: transparent !important;
+}
+
+.custom-navbar .links a {
+  color: #7F7F7F;
 }
 
 /* 设置首页文字动画 */
