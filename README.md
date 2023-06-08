@@ -20,20 +20,22 @@ export default {
     }
   },
   mounted() {
-    const ifJanchor = document.getElementById('JanchorDown'); 
-    ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);
-    let a = document.createElement('a');
-    a.id = 'JanchorDown';
-    a.className = 'anchor-down';
-    document.querySelector('.hero').append(a);
-    let targetA = document.getElementById('JanchorDown');
-    targetA.addEventListener('click', e => { // 添加点击事件
-      this.scrollFn();
-    })
+    this.$nextTick(() => {
+      const ifJanchor = document.getElementById('JanchorDown'); 
+      ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);
+      let a = document.createElement('a');
+      a.id = 'JanchorDown';
+      a.className = 'anchor-down';
+      document.querySelector('.hero').append(a);
+      let targetA = document.getElementById('JanchorDown');
+      targetA.addEventListener('click', e => { // 添加点击事件
+        this.scrollFn();
+      })
 
-    this.navbar = document.querySelector('.navbar');
-    this.navbar && this.navbar.classList.add('custom-navbar');
-    document.addEventListener('scroll', this.homeNavbarHandle);
+      this.navbar = document.querySelector('.navbar');
+      this.navbar && this.navbar.classList.add('custom-navbar');
+      document.addEventListener('scroll', this.homeNavbarHandle);
+    })
   },
   beforeDestroy() {
     document.removeEventListener('scroll', this.homeNavbarHandle);
