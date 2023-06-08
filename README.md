@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: '时刻充满希望'
-bgImage: 'https://photo.smallsunnyfox.com/images/blog/bg.png'
+bgImage: '/home_bg.png'
 bgImageStyle: {
   height: '100vh',
   minHeight: '600px',
