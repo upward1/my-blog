@@ -2,7 +2,7 @@ const plugins = require('./config/plugins')
 const sidebar = require('./config/sidebar/')
 module.exports = {
   title: '知识库',
-  description: '路漫漫其修远兮,吾将上下而求索',
+  description: '路漫漫其修远兮，吾将上下而求索',
   dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico', },],
@@ -84,7 +84,8 @@ module.exports = {
     lastUpdated: 'Last Updated',
     author: '小陈同学',
     authorAvatar: '/avatar.png',
-    // record: 'xxxx',
+    // record: '豫ICP备2021022451号-1',
+    // recordLink: 'https://beian.miit.gov.cn/',
     startYear: '2017',
     //git地址
     repo: 'upward1/my-blog',
