@@ -18,10 +18,7 @@ module.exports = {
   copyright: {
     // noCopy: true, // 选中的文字将无法被复制
     minLength: 30, // 如果长度超过 30 个字符
-    clipboardComponent: path.resolve(
-      __dirname,
-      '../../components/Copyright.vue'
-    )
+    clipboardComponent: path.resolve(__dirname, '../../components/Copyright.vue')
   },
   // 点击泡泡
   'cursor-effects': {
@@ -151,7 +148,7 @@ module.exports = {
       // 是否启用(关闭请设置为false)(default: true)
       enable: true,
       // 模型名称(default: hibiki)
-      model: 'tororo', //koharu,hibiki,z16,miku,tororo
+      model: 'tororo', // koharu,hibiki,z16,miku,tororo
       display: {
         position: 'left', // 显示位置：left/right(default: 'right')
         width: 135, // 模型的长度(default: 135)

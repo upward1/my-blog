@@ -114,7 +114,7 @@ module.exports = {
     docsBranch: 'main',
     editLinks: true,
     editLinkText: '在 GitHub 上编辑此页！',
-    //评论
+    // 评论
     valineConfig: {
       appId: 'v2aZJC7xUKZ3zSP8UJWE1MCW-gzGzoHsz',
       appKey: 'G3rqbDY8Q22ZP8CcXTrxPtwX',
