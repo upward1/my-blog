@@ -15,16 +15,19 @@ module.exports = {
   // 百度推送
   'vuepress-plugin-baidu-autopush': {},
   // 可以禁用文字复制或者在复制时添加著作权信息
-  'copyright': {
+  copyright: {
     // noCopy: true, // 选中的文字将无法被复制
-    minLength: 30, // 如果长度超过  30 个字符
-    clipboardComponent: path.resolve(__dirname, '../../components/Copyright.vue')
+    minLength: 30, // 如果长度超过 30 个字符
+    clipboardComponent: path.resolve(
+      __dirname,
+      '../../components/Copyright.vue'
+    )
   },
   // 点击泡泡
   'cursor-effects': {
     size: 2, // size of the particle, default: 2
     shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
-    zIndex: 999999999, // z-index property of the canvas, default: 999999999
+    zIndex: 999999999 // z-index property of the canvas, default: 999999999
   },
   'dynamic-title': {
     showIcon: '/favicon.ico',
@@ -47,17 +50,17 @@ module.exports = {
     }
   },
   // 樱花特效
-  'sakura': {
-    num: 20,  // 默认数量
+  sakura: {
+    num: 20, // 默认数量
     show: true, //  是否显示
-    zIndex: 9999,   // 层级
+    zIndex: 9999, // 层级
     img: {
-      replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
-      httpUrl: '...'     // 绝对路径
+      replace: false, // false 默认图 true 换图 需要填写httpUrl地址
+      httpUrl: '...' // 绝对路径
     }
   },
   // 背景特别多线
-  'nest': {
+  nest: {
     // 更多配置项以及配置项说明上 https://github.com/vxhly/vuepress-plugin-nest 查看
     color: '50,139,98', // color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
     // pointColor: '255,0,255', // color of points, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
@@ -68,9 +71,9 @@ module.exports = {
   },
   // 丝带效果
   'ribbon-animation': {
-    size: 90,   // 默认数据
-    opacity: 0.3,  //  透明度
-    zIndex: -2,   //  层级
+    size: 90, // 默认数据
+    opacity: 0.3, // 透明度
+    zIndex: -2, // 层级
     opt: {
       // 色带HSL饱和度
       colorSaturation: '80%',
@@ -93,66 +96,42 @@ module.exports = {
       // 随着时间的推移，为每个功能区添加动画效果
       animateSections: true
     },
-    ribbonShow: false, //  点击彩带  true显示  false为不显示
-    ribbonAnimationShow: true  // 滑动彩带
+    ribbonShow: false, // 点击彩带 true显示 false为不显示
+    ribbonAnimationShow: true // 滑动彩带
   },
   // 背景音乐
   '@vuepress-reco/vuepress-plugin-bgm-player': {
     audios: [
       {
-        name: '羹火旁',
-        artist: '吕大 叶/Broma Three',
-        url: 'https://tools.goodluckweb.top/blog/m/genghuopang.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/genghuopang.jpg',
+        name: '此生不换',
+        artist: '青鸟飞鱼',
+        url: 'https://kaixin1.top/assets/music/此生不换.mp3',
+        cover: 'https://kaixin1.top/assets/music/此生不换.jpg'
+      },
+      {
+        name: 'PDD洪荒之力',
+        artist: '青稚m',
+        url: 'https://kaixin1.top/assets/music/PDD洪荒之力.mp3',
+        cover: 'https://kaixin1.top/assets/music/PDD洪荒之力.jpg'
+      },
+      {
+        name: '海底',
+        artist: '凤凰传奇',
+        url: 'https://kaixin1.top/assets/music/海底.mp3',
+        cover: 'https://kaixin1.top/assets/music/海底.jpg'
       },
       {
         name: 'Wake',
         artist: 'Hillsong Young & Free',
-        url: 'https://tools.goodluckweb.top/blog/m/wake.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/wake.jpg',
+        url: 'https://kaixin1.top/assets/music/wake.mp3',
+        cover: 'https://kaixin1.top/assets/music/wake.jpg'
       },
       {
-        name: 'Take me hand',
-        artist: 'Cécile Corbel、 Daishi Dance',
-        url: 'https://tools.goodluckweb.top/blog/m/take-me-hand.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/take-me-hand.jpg',
-      },
-      {
-        name: '樱花树下的约定',
-        artist: '柯柯柯啊',
-        url: 'https://tools.goodluckweb.top/blog/m/yueding.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/yueding.jpg',
-      },
-      {
-        name: '青空',
-        artist: 'Candy_Wind',
-        url: 'https://tools.goodluckweb.top/blog/m/qingkong.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/qingkong.jpg',
-      },
-      {
-        name: '爱是无畏的冒险',
-        artist: '程今',
-        url: 'https://tools.goodluckweb.top/blog/m/aishi.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/aishi.jpg',
-      },
-      {
-        name: '大海',
-        artist: '梦毅学长',
-        url: 'https://tools.goodluckweb.top/blog/m/dahai.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/dahai.jpg',
-      },
-      {
-        name: '遗失的心跳',
-        artist: '萧亚轩',
-        url: 'https://tools.goodluckweb.top/blog/m/xintiao.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/xintiao.jpg',
-      },
-      {
-        name: '妈妈的话',
-        artist: 'Zyboy忠宇',
-        url: 'https://tools.goodluckweb.top/blog/m/mamadehua.mp3',
-        cover: 'https://tools.goodluckweb.top/blog/m/mamadehua.jpg',
-      },
+        name: '琵琶行',
+        artist: '奇然/沈谧仁',
+        url: 'https://kaixin1.top/assets/music/琵琶行.mp3',
+        cover: 'https://kaixin1.top/assets/music/琵琶行.jpg'
+      }
     ],
     // 是否默认缩小
     autoShrink: true,
@@ -162,7 +141,7 @@ module.exports = {
     floatPosition: 'left', //'left'/'right'
     // 悬浮窗样式
     floatStyle: { bottom: '50px', 'z-index': '999999' },
-    position: { left: '10px', bottom: '10px', 'z-index': '999999'}
+    position: { left: '10px', bottom: '10px', 'z-index': '999999' }
   },
   // 看板娘2
   'vuepress-plugin-helper-live2d': {
@@ -172,13 +151,13 @@ module.exports = {
       // 是否启用(关闭请设置为false)(default: true)
       enable: true,
       // 模型名称(default: hibiki)
-      model: 'tororo',//koharu,hibiki,z16,miku,tororo
+      model: 'tororo', //koharu,hibiki,z16,miku,tororo
       display: {
         position: 'left', // 显示位置：left/right(default: 'right')
         width: 135, // 模型的长度(default: 135)
         height: 300, // 模型的高度(default: 300)
         hOffset: 100, //  水平偏移(default: 65)
-        vOffset: 30, //  垂直偏移(default: 0)
+        vOffset: 30 //  垂直偏移(default: 0)
       },
       mobile: {
         show: false // 是否在移动设备上显示(default: false)
@@ -187,5 +166,5 @@ module.exports = {
         opacity: 1 // 模型透明度(default: 0.8)
       }
     }
-  },
+  }
 }

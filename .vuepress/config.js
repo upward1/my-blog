@@ -5,10 +5,22 @@ module.exports = {
   description: '路漫漫其修远兮，吾将上下而求索',
   dest: 'dist',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico', },],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no', },],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,user-scalable=no'
+      }
+    ],
     ['meta', { name: 'keywords', content: '知识库, 个人博客' }],
-    ['meta', { name: 'description', content: '往日暗沉不可追，来日之路光明灿烂。欢迎搜索我的博客，这里应该有您想要的东西，来和我一起交流学习吧！' }],
+    [
+      'meta',
+      {
+        name: 'description',
+        content: '往日暗沉不可追，来日之路光明灿烂。欢迎搜索我的博客，这里应该有您想要的东西，来和我一起交流学习吧！'
+      }
+    ],
     ['meta', { name: 'author', content: '小陈同学' }],
     ['meta', { name: 'robots', content: 'all' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -16,19 +28,32 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
-    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#e7eaed' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    [
+      'link',
+      {
+        rel: 'mask-icon',
+        href: '/icons/safari-pinned-tab.svg',
+        color: '#e7eaed'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'msapplication-TileImage',
+        content: '/icons/msapplication-icon-144x144.png'
+      }
+    ],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['link', { rel: 'stylesheet', href: '/css/style.css' }],
     // 引入鼠标点击脚本
     [
       'script',
       {
-        'language': 'javascript',
-        'type': 'text/javascript',
-        'src': '/utils/js/MouseClickEffect.js'
+        language: 'javascript',
+        type: 'text/javascript',
+        src: '/utils/js/MouseClickEffect.js'
       }
-    ],
+    ]
   ],
   theme: 'reco',
   locales: {
@@ -47,31 +72,25 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2,
-        text: '分类',
+        text: '分类'
       },
       tag: {
         location: 3,
-        text: '标签',
-      },
+        text: '标签'
+      }
     },
     friendLink: [
       {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
-        logo: 'https://www.recoluan.com/head.png',
-        link: 'https://www.recoluan.com',
-      },
-      {
         title: '图书推荐系统',
         desc: '一个知识积累的地方。',
-        logo: 'https://tools.goodluckweb.top/blog/m/wake.jpg',
-        link: 'http://kaixin1.top:3005/',
+        logo: 'https://kaixin1.top/assets/book.jpg',
+        link: 'http://kaixin1.top:3005/'
       },
       {
         title: '3D相册',
         desc: '炫酷的相册展示。',
-        logo: 'https://tools.goodluckweb.top/blog/m/take-me-hand.jpg',
-        link: 'http://kaixin1.top:3001/',
+        logo: 'https://kaixin1.top/assets/picture.jpg',
+        link: 'http://kaixin1.top:3001/'
       }
     ],
     logo: '/logo.png',
@@ -101,11 +120,11 @@ module.exports = {
       appKey: 'G3rqbDY8Q22ZP8CcXTrxPtwX',
       placeholder: '来都来了，冒个泡再走呗...',
       recordIP: true, // 是否记录评论者IP
-      avatar: 'wavatar',
-    },
+      avatar: 'wavatar'
+    }
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true
   },
   plugins
 }
